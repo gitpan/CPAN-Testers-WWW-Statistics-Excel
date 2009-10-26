@@ -1,0 +1,44 @@
+#!/usr/bin/perl -w
+use strict;
+
+use lib qw(./lib);
+use CPAN::Testers::WWW::Statistics::Excel;
+
+my $x = CPAN::Testers::WWW::Statistics::Excel->new(
+            logfile     => 'logs/cpanstats.log',
+            logclean    => 1);
+
+$x->create( 
+    source      => '/var/www/cpanstats/osmatrix-month-wide.html',
+    target      => '/var/www/cpanstats/osmatrix-month.xls');
+
+$x->create( 
+    source      => '/var/www/cpanstats/osmatrix-full-wide.html',
+    target      => '/var/www/cpanstats/osmatrix-full.xls');
+
+$x->create( 
+    source      => '/var/www/cpanstats/osmatrix-full-month-wide.html',
+    target      => '/var/www/cpanstats/osmatrix-full-month.xls');
+
+$x->create( 
+    source      => '/var/www/cpanstats/osmatrix-wide.html',
+    target      => '/var/www/cpanstats/osmatrix.xls');
+
+
+
+$x->create( 
+    source      => '/var/www/cpanstats/pmatrix-month-wide.html',
+    target      => '/var/www/cpanstats/pmatrix-month.xls');
+
+$x->create( 
+    source      => '/var/www/cpanstats/pmatrix-full-wide.html',
+    target      => '/var/www/cpanstats/pmatrix-full.xls');
+
+$x->create( 
+    source      => '/var/www/cpanstats/pmatrix-full-month-wide.html',
+    target      => '/var/www/cpanstats/pmatrix-full-month.xls');
+
+$x->create( 
+    source      => '/var/www/cpanstats/pmatrix-wide.html',
+    target      => '/var/www/cpanstats/pmatrix.xls');
+

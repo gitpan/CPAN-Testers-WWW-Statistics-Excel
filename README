@@ -1,0 +1,35 @@
+CPAN-Testers-WWW-Statistics-Excel
+=================================
+
+Excel creation tools for CPAN Tester Statistics website.
+
+Please note the tests for this code is very basic. If you wish to help me out
+and can add to the test suite, please feel free.
+
+INSTALLATION
+
+Untar the tarball into the directory of choice. All scripts can then be run
+from that directory. All the results end up in ./html, which can then be
+copied to your web server.
+
+DEPENDENCIES
+
+The scripts require the following Perl modules to be installed:
+
+  Getopt::ArgvFile
+  Getopt::Long
+  HTML::Entities
+  IO::File
+
+SCRIPTS
+
+* cpanstats-writeexcel
+
+Excel file creation script. Generates all the Excel files.
+
+COPYRIGHT AND LICENCE
+
+  Copyright (C) 2009 Barbie for Miss Barbell Productions
+
+  This package is free software; you can redistribute it and/or 
+  modify it under the same terms as Perl itself.
