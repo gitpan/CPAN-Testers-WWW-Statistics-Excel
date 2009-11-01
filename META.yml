@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                CPAN::Testers::WWW::Statistics::Excel
-version:             0.01
+version:             0.02
 abstract:            Scripts to create the Excel files for the cpanstats website
 author:
   - Barbie <barbie@cpan.org>
@@ -29,7 +29,7 @@ build_requires:
 provides:
   CPAN::Testers::WWW::Statistics::Excel:
     file:     lib/CPAN/Testers/WWW/Statistics/Excel.pm
-    version:  0.01
+    version:  0.02
 
 meta-spec:
    version:   1.4

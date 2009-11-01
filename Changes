@@ -1,4 +1,7 @@
 Revision history for CPAN-Testers-WWW-Statistics-Excel
 
+0.02	01/11/2009
+	- test fix due to MSWin32 delaying the file deletion process.
+
 0.01	26/10/2009
 	- First release

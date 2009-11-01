@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 23;
+use Test::More tests => 22;
 use File::Path;
 
 use CPAN::Testers::WWW::Statistics::Excel;
@@ -80,4 +80,4 @@ unlink('50logging.log') if(-f '50logging.log');
     like($log[0], qr!\d{4}/\d\d/\d\d \d\d:\d\d:\d\d Start Again!, 'line 1 of log');
 }
 
-ok( unlink('50logging.log'), 'removed 50logging.log' );
+unlink('50logging.log');    # remove 50logging.log (cannot test due to MSWin32)
