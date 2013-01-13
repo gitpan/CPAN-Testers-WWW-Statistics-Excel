@@ -1,6 +1,6 @@
 {
     "name": "CPAN-Testers-WWW-Statistics-Excel",
-    "version": "0.03",
+    "version": "0.04",
     "abstract": "Scripts to create the CPAN Testers Statistics website",
     "author": [
         "Barbie (BARBIE) <barbie@cpan.org>"
@@ -27,7 +27,6 @@
                 "Class::Accessor::Fast": "0",
                 "File::Basename": "0",
                 "File::Path": "0",
-                "File::Slurp": "0",
                 "Getopt::ArgvFile": "0",
                 "Getopt::Long": "0",
                 "HTML::Entities": "0",
@@ -38,6 +37,7 @@
         },
         "test" : {
             "requires": {
+                "File::Slurp": "0",
                 "Test::More": "0.70"
             },
             "recommends": {
@@ -52,7 +52,7 @@
     "provides": {
         "CPAN::Testers::WWW::Statistics::Excel": {
             "file": "lib/CPAN/Testers/WWW/Statistics/Excel.pm",
-            "version": "0.03"
+            "version": "0.04"
         }
     },
     "no_index": {
@@ -62,6 +62,11 @@
     "resources": {
         "license": "http://www.perlfoundation.org/artistic_license_2_0",
         "homepage": "http://stats.cpantesters.org",
-        "bugtracker": { "web": "http://rt.cpan.org/Public/Dist/Display.html?Name=CPAN-Testers-WWW-Statistics-Excel" }
+        "bugtracker": { "web": "http://rt.cpan.org/Public/Dist/Display.html?Name=CPAN-Testers-WWW-Statistics-Excel" },
+        "repository": {
+            "url": "git://github.com/barbie/cpan-testers-www-statistics-excel.git",
+            "web": "http://github.com/barbie/cpan-testers-www-statistics-excel",
+            "type": "git"
+        }
     }
 }

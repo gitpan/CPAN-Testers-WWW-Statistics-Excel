@@ -25,6 +25,11 @@ The scripts require the following Perl modules to be installed:
   IO::File
   Spreadsheet::WriteExcel
 
+For testing purposes you also need:
+
+  File::Slurp
+  Test::More
+
 SCRIPTS
 
 * cpanstats-writeexcel
@@ -59,5 +64,5 @@ COPYRIGHT AND LICENCE
 
   Copyright (C) 2009-2013 Barbie for Miss Barbell Productions
 
-  This module is free software; you can redistribute it and/or
+  This distribution is free software; you can redistribute it and/or
   modify it under the Artistic Licence v2.

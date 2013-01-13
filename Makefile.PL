@@ -18,7 +18,6 @@ WriteMakefile(
         'Class::Accessor::Fast'     => 0,
         'File::Basename'            => 0,
         'File::Path'                => 0,
-        'File::Slurp'               => 0,
         'HTML::Entities'            => 0,
         'HTML::TokeParser'          => 0,
         'IO::File'                  => 0,
@@ -29,6 +28,7 @@ WriteMakefile(
         'Getopt::Long'              => 0,
 
         # for testing
+        'File::Slurp'               => 0,
         'Test::More'                => 0.70
 
     },
