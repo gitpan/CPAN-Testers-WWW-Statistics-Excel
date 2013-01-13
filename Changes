@@ -1,7 +1,16 @@
 Revision history for CPAN-Testers-WWW-Statistics-Excel
 
-0.02	01/11/2009
-	- test fix due to MSWin32 delaying the file deletion process.
+0.03	2013-01-13
+	    - spelling fixes. (thanks to Florian Schlichting & Gregor Herrmann).
+        - change file dates changed to meet W3CDTF standards.
+        - updated META files, adding META.json.
+        - added minimum perl version (5.006).
+        - reworked Makefile.PL for clarity.
+        - updated package files.
+        - updated test suite.
 
-0.01	26/10/2009
-	- First release
+0.02	2009-11-01
+	    - test fix due to MSWin32 delaying the file deletion process.
+
+0.01	2009-10-26
+	    - First release

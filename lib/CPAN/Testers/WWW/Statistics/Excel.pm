@@ -4,7 +4,7 @@ use warnings;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 #----------------------------------------------------------------------------
 
@@ -76,11 +76,11 @@ sub new {
     my $self = {};
     bless $self, $class;
 
-    $self->logfile(  $hash{logfile}       );
+    $self->logfile(  $hash{logfile}  || '' );
     $self->logclean( $hash{logclean} || 0 );
 
-    $self->_log("logfile  =".($self->logfile   || ''));
-    $self->_log("logclean =".($self->logclean  || ''));
+    $self->_log("logfile  =" . $self->logfile  );
+    $self->_log("logclean =" . $self->logclean );
 
     return $self;
 }
@@ -283,7 +283,7 @@ There are no known bugs at the time of this release. However, if you spot a
 bug or are experiencing difficulties, that is not explained within the POD
 documentation, please send bug reports and patches to the RT Queue (see below).
 
-Fixes are dependant upon their severity and my availablity. Should a fix not
+Fixes are dependent upon their severity and my availability. Should a fix not
 be forthcoming, please feel free to (politely) remind me.
 
 RT Queue -
@@ -305,9 +305,9 @@ F<http://blog.cpantesters.org/>
 
 =head1 COPYRIGHT AND LICENSE
 
-  Copyright (C) 2009 Barbie for Miss Barbell Productions.
+  Copyright (C) 2009-2013 Barbie for Miss Barbell Productions.
 
   This module is free software; you can redistribute it and/or
-  modify it under the same terms as Perl itself.
+  modify it under the Artistic Licence v2.
 
 =cut

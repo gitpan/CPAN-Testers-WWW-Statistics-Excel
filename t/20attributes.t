@@ -1,7 +1,5 @@
-#!perl
-
+#!/usr/bin/perl -w
 use strict;
-use warnings;
 
 use Test::More tests => 9;
 use CPAN::Testers::WWW::Statistics::Excel;
@@ -12,6 +10,7 @@ ok( my $obj = CPAN::Testers::WWW::Statistics::Excel->new(), "got object" );
 
 # predefined attributes
 foreach my $k ( qw/
+    logfile
     logclean
 / ){
   my $label = "[$k]";
@@ -23,18 +22,3 @@ foreach my $k ( qw/
     is( $obj->$k, 123, "$label get" );
   };
 }
-
-# undefined attributes
-foreach my $k ( qw/
-    logfile
-/ ){
-  my $label = "[$k]";
-  SKIP: {
-    ok( $obj->can($k), "$label can" )
-	or skip "'$k' attribute missing", 3;
-    is( $obj->$k(), undef, "$label has no default" );
-    is( $obj->$k(123), 123, "$label set" );
-    is( $obj->$k, 123, "$label get" );
-  };
-}
-

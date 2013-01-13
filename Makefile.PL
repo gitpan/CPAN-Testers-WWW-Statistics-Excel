@@ -1,25 +1,35 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use 5.006;
+
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    'NAME'             => 'CPAN::Testers::WWW::Statistics::Excel',
-    'VERSION_FROM'     => 'lib/CPAN/Testers/WWW/Statistics/Excel.pm',
-    'PREREQ_PM'        => {
+    AUTHOR              => 'Barbie <barbie@cpan.org>',
+    NAME                => 'CPAN::Testers::WWW::Statistics::Excel',
+    VERSION_FROM        => 'lib/CPAN/Testers/WWW/Statistics/Excel.pm',
+    ABSTRACT            => 'Scripts to create the cpanstats website',
+    NO_META             => 1,
+    PREREQ_PM => {
 
-        Class::Accessor::Fast       => 0,
-        File::Basename              => 0,
-        File::Path                  => 0,
-        Getopt::ArgvFile            => 0,
-        Getopt::Long                => 0,
-        HTML::TokeParser            => 0,
-        IO::File                    => 0,
-        Spreadsheet::WriteExcel		=> 0,
+        # for module
+        'Class::Accessor::Fast'     => 0,
+        'File::Basename'            => 0,
+        'File::Path'                => 0,
+        'File::Slurp'               => 0,
+        'HTML::Entities'            => 0,
+        'HTML::TokeParser'          => 0,
+        'IO::File'                  => 0,
+        'Spreadsheet::WriteExcel'   => 0,
 
-        Test::More                  => 0,     # for testing
+        # for scripts
+        'Getopt::ArgvFile'          => 0,
+        'Getopt::Long'              => 0,
+
+        # for testing
+        'Test::More'                => 0.70
+
     },
-
-    NO_META         => 1,
-
-    ($] >= 5.005 ?    ## Add these new keywords supported since 5.005
-      (ABSTRACT     => 'Scripts to create the cpanstats website',
-       AUTHOR       => 'Barbie <barbie@cpan.org>') : ()),
 );

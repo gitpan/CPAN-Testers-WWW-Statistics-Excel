@@ -1,6 +1,7 @@
 Changes
 Makefile.PL
-MANIFEST			This list of files
+MANIFEST
+META.json
 META.yml
 README
 bin/cpanstats-writeexcel
@@ -8,10 +9,13 @@ lib/CPAN/Testers/WWW/Statistics/Excel.pm
 t/01base.t
 t/20attributes.t
 t/21dies.t
+t/22create.t
 t/50logging.ini
 t/50logging.t
 t/90podtest.t
 t/91podcover.t
 t/94metatest.t
 t/95changedate.t
-t/example.html
+t/96metatest.t
+t/samples/osmatrix-month-wide.html
+t/samples/pmatrix-month-wide.html
