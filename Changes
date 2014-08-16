@@ -1,4 +1,8 @@
 Revision history for CPAN-Testers-WWW-Statistics-Excel
+======================================================
+
+0.05    2014-08-16
+        - fixed distribution name in metadata.
 
 0.04    2013-01-13
         - added LICENSE file.

@@ -1,6 +1,6 @@
 {
     "name": "CPAN-Testers-WWW-Statistics-Excel",
-    "version": "0.04",
+    "version": "0.05",
     "abstract": "Scripts to create the CPAN Testers Statistics website",
     "author": [
         "Barbie (BARBIE) <barbie@cpan.org>"
@@ -52,7 +52,7 @@
     "provides": {
         "CPAN::Testers::WWW::Statistics::Excel": {
             "file": "lib/CPAN/Testers/WWW/Statistics/Excel.pm",
-            "version": "0.04"
+            "version": "0.05"
         }
     },
     "no_index": {
