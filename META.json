@@ -1,19 +1,19 @@
 {
     "name": "CPAN-Testers-WWW-Statistics-Excel",
-    "version": "0.05",
+    "version": "0.06",
     "abstract": "Scripts to create the CPAN Testers Statistics website",
     "author": [
         "Barbie (BARBIE) <barbie@cpan.org>"
     ],
 
-    "license": "artistic_2",
+    "license": [ "artistic_2" ],
     "dynamic_config" : 0,
     "release_status" : "stable",
     "meta-spec": {
         "version": "2",
         "url": "http://search.cpan.org/dist/CPAN-Meta/lib/CPAN/Meta/Spec.pm"
     },
-    "generated_by": "Hand 1.0",
+    "generated_by": "The Hand of Barbie 1.0",
     "keywords" : [
         "qa",
         "cpan",
@@ -52,7 +52,7 @@
     "provides": {
         "CPAN::Testers::WWW::Statistics::Excel": {
             "file": "lib/CPAN/Testers/WWW/Statistics/Excel.pm",
-            "version": "0.05"
+            "version": "0.06"
         }
     },
     "no_index": {
@@ -60,8 +60,8 @@
     },
 
     "resources": {
-        "license": "http://www.perlfoundation.org/artistic_license_2_0",
         "homepage": "http://stats.cpantesters.org",
+        "license": [ "http://www.perlfoundation.org/artistic_license_2_0" ],
         "bugtracker": { "web": "http://rt.cpan.org/Public/Dist/Display.html?Name=CPAN-Testers-WWW-Statistics-Excel" },
         "repository": {
             "url": "git://github.com/barbie/cpan-testers-www-statistics-excel.git",
